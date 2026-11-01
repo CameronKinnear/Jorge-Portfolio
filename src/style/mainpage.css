@@ -10,10 +10,19 @@
     margin-left: 5%;
 }
 
+.nav-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .nav-button {
-    width: 25%;
+    position: absolute;
+    width: 100px;
     margin-left: 5%;
     margin-right: 5%;
+    text-align: center;
 
     border: none;
     font-size: 20px;
@@ -21,6 +30,7 @@
 
 .nav-button:hover {
     border-bottom: 2px solid black;
+
 }
 
 .nav-button:focus {
