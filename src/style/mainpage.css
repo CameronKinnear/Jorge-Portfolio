@@ -1,0 +1,29 @@
+#title {
+    align-items: center;
+    font-size: 72px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#nav-bar {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.nav-button {
+    width: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    border: none;
+    font-size: 20px;
+}
+
+.nav-button:hover {
+    border-bottom: 2px solid black;
+}
+
+.nav-button:focus {
+    border-bottom: 2px solid black;
+}
+

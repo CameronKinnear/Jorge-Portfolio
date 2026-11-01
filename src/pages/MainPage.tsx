@@ -1,8 +1,16 @@
+import Title from '../components/Title'
+import NavigationBar from '../components/NavigationBar'
 import '../style/mainpage.css'
 
 function MainPage() {
+    var selectedPage = null;
+
     return (
-        <h1>Title</h1>
+        <>
+            <Title />
+            <NavigationBar />
+            
+        </>
     )
 }
 
