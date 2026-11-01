@@ -1,3 +1,5 @@
+import './about.css'
+
 function About() {
     return (
         <p>lorem ipsum dolor sit amet consectetur adipiscing elit est laborum harum ullamco molestias est mollit ad ad qui fugiat incididunt voluptatum ut lorem labore est exercitation excepteur eligendi laborum sit cillum nihil eu est et placeat quo non libero tempor in iusto nam ea praesentium accusamus praesentium laborum occaecat nisi laboris molestias velit excepteur libero fugiat in quo minus consequat cupidatat cum tempore sunt cum excepteur est est repellendus et officia nobis esse qui dolor quo id in cillum dolorem soluta atque laborum elit dolores qui dolor dolore corrupti est consequatur aute nobis quibusdam occaecat et minus et illum voluptas est maxime non dolore fugiat minim praesentium facere dignissimos ex voluptatum et eu id et reprehenderit et velit provident cupidatat sunt nulla tempore odio non excepteur et velit incididunt anim anim imperdiet non aute dolor enim et officia et fugiat et excepturi proident ea elit dolor placeat pariatur dignissimos omnis</p>

@@ -1,8 +1,8 @@
 import Title from '../components/Title'
 import NavigationBar from '../components/NavigationBar'
 import About from '../pages/subpages/About'
-import '../style/mainpage.css'
-import '../style/subpage.css'
+import './mainpage.css'
+import './subpage.css'
 
 function MainPage() {
     var selectedPage = <About />;

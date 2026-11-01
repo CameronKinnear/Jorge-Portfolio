@@ -1,5 +1,5 @@
 import '../style/global.css'
-import '../style/mainpage.css'
+import './navbar.css'
 function NavigationBar() {
     var numOfButtons = 4;
     var widthPerButton : Number = 100 / numOfButtons;
@@ -17,9 +17,6 @@ function NavigationBar() {
             <div className="nav-button-div" style={{width : widthPerButton + "%"}}>
                 <button className="nav-button" value="Contact">Contact</button>
             </div>
-            
-            
-            
         </div>
     )
 }
