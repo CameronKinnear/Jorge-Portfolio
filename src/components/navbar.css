@@ -1,0 +1,31 @@
+#nav-bar {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.nav-selected {
+    border-bottom: 2px solid black;
+}
+
+.nav-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-button {
+    position: absolute;
+    width: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+
+    border: none;
+    font-size: 20px;
+}
+
+.nav-button:hover,
+.nav-button.nav-selected {
+    border-bottom: 2px solid black;
+}
