@@ -1,0 +1,77 @@
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.art-card {
+    position: relative;
+    display: inline-block;
+}
+
+.art-card img {
+    display: block;
+    filter: drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.4));
+}
+
+.inline-details {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+}
+
+.card-title {
+    margin: 0;
+}
+
+.card-desc {
+    margin: 0;
+    line-height: 20px;
+    font-size: 16px;
+}
+.card-right {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    align-items: end;
+    justify-content: end;
+    width: 50%;
+}
+
+.card-hover-exit {
+    animation: slideOut 0.2s ease-out forwards;
+}
+
+.card-hover-enter {
+    animation: slideIn 0.2s ease-out forwards;
+}

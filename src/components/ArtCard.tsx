@@ -1,20 +1,51 @@
+import { useState } from 'react'
+import './artcards.css'
+
 interface ArtInfoProps {
     source?: string,
-    name: string,
-    desc: string,
-    date: Date
+    medium?: string
+    name?: string,
+    desc?: string,
+    date: Date,
     width?: number,
     height?: number
 }
 
-export default function ArtCard({source = "./art/placeholder.png", name, desc, date, width = 600, height = 400} : ArtInfoProps) {
+const HOVER_STATUS: Record<number, string> = {
+    1 : '',
+    2 : 'card-hover-enter',
+    3 : 'card-hover-exit'
+} 
+
+export default function ArtCard({source = "./art/placeholder.png", medium = "Oil on canvas. 4 x 3", name, desc, date, width = 400, height = 300} : ArtInfoProps) {
+    const [isHovering, setIsHovering] = useState<number>(1)
+
+    const handleHoverEnter = () => {
+        setIsHovering(2);
+    }
+
+    const handleHoverLeave = () => {
+        setIsHovering(3);
+    }
+    
     return (
         <>
-        <div className="art-card">
+        <div className="art-card"
+            onMouseEnter={handleHoverEnter}
+            onMouseLeave={handleHoverLeave}>
             <img src={source} alt={name} width={width} height={height}/>
-            <h1>{name}</h1>
-            <p>{desc}</p>
-            <span>{date.toDateString()}</span>
+            <div className={`inline-details ` + (HOVER_STATUS[isHovering])}>
+                <div className='card-left'>
+                    <h1 className='card-title'>{name}</h1>
+                    <p className='card-desc'>{desc}</p>
+                </div>
+                <div className='card-right'>
+                    <span>{medium}</span>
+                    <span>{date.toDateString()}</span>
+                </div>
+                
+            </div>
+            
         </div>
         </>
     )
