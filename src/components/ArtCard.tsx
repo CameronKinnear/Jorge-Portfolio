@@ -1,14 +1,20 @@
 import { useState } from 'react'
 import './artcards.css'
 
-interface ArtInfoProps {
-    source?: string,
-    medium?: string
-    name?: string,
-    desc?: string,
-    date: Date,
+type orientation = "vertical" | "horizontal" | "square";
+
+interface ArtDetails {
+    // Metadata
+    source: string,
+    orientation?: orientation
     width?: number,
     height?: number
+
+    // Display
+    name?: string,
+    medium?: string
+    description?: string,
+    date?: string,
 }
 
 const HOVER_STATUS: Record<number, string> = {
@@ -17,7 +23,7 @@ const HOVER_STATUS: Record<number, string> = {
     3 : 'card-hover-exit'
 } 
 
-export default function ArtCard({source = "./art/placeholder.png", medium = "Oil on canvas. 4 x 3", name, desc, date, width = 400, height = 300} : ArtInfoProps) {
+export default function ArtCard({name, medium, description, date, source, orientation, width, height} : ArtDetails) {
     const [isHovering, setIsHovering] = useState<number>(1)
 
     const handleHoverEnter = () => {
@@ -27,7 +33,7 @@ export default function ArtCard({source = "./art/placeholder.png", medium = "Oil
     const handleHoverLeave = () => {
         setIsHovering(3);
     }
-    
+  
     return (
         <>
         <div className="art-card"
@@ -37,11 +43,11 @@ export default function ArtCard({source = "./art/placeholder.png", medium = "Oil
             <div className={`inline-details ` + (HOVER_STATUS[isHovering])}>
                 <div className='card-left'>
                     <h1 className='card-title'>{name}</h1>
-                    <p className='card-desc'>{desc}</p>
+                    <p className='card-desc'>{description}</p>
                 </div>
                 <div className='card-right'>
                     <span>{medium}</span>
-                    <span>{date.toDateString()}</span>
+                    <span>{date}</span>
                 </div>
                 
             </div>
