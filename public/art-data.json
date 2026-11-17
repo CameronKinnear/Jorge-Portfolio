@@ -1,0 +1,23 @@
+{
+    "1" : {
+        "id" : 1,
+        "source" : "./art/placeholder_h.png",
+        "width" : 400,
+        "height" : 300,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    },
+
+    "2" : {
+        "id" : 2,
+        "source" : "./art/placeholder_v.png",
+        "width" : 300,
+        "height" : 400,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    }
+}

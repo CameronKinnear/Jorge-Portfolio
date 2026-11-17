@@ -1,12 +1,10 @@
 import { useState } from 'react'
 import './artcards.css'
 
-type orientation = "vertical" | "horizontal" | "square";
-
 interface ArtDetails {
     // Metadata
+    id: number,
     source: string,
-    orientation?: orientation
     width?: number,
     height?: number
 
@@ -23,7 +21,7 @@ const HOVER_STATUS: Record<number, string> = {
     3 : 'card-hover-exit'
 } 
 
-export default function ArtCard({name, medium, description, date, source, orientation, width, height} : ArtDetails) {
+export default function ArtCard({name, medium, description, date, source, width, height} : ArtDetails) {
     const [isHovering, setIsHovering] = useState<number>(1)
 
     const handleHoverEnter = () => {
@@ -49,9 +47,7 @@ export default function ArtCard({name, medium, description, date, source, orient
                     <span>{medium}</span>
                     <span>{date}</span>
                 </div>
-                
             </div>
-            
         </div>
         </>
     )
