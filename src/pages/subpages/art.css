@@ -1,0 +1,16 @@
+.art-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0;
+}
+
