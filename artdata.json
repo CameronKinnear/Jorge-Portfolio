@@ -1,0 +1,83 @@
+[
+    {
+        "id" : 1,
+        "source" : "./art/placeholder_h.png",
+        "width" : 300,
+        "height" : 225,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    },
+    {
+        "id" : 2,
+        "source" : "./art/placeholder_v.png",
+        "width" : 735,
+        "height" : 900,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    },
+    {
+        "id" : 3,
+        "source" : "./art/placeholder_h.png",
+        "width" : 400,
+        "height" : 300,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    },
+    {
+        "id" : 4,
+        "source" : "./art/placeholder_h.png",
+        "width" : 400,
+        "height" : 300,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    },
+    {
+        "id" : 5,
+        "source" : "./art/placeholder_h.png",
+        "width" : 400,
+        "height" : 300,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    },
+    {
+        "id" : 6,
+        "source" : "./art/placeholder_v.png",
+        "width" : 735,
+        "height" : 900,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    },
+    {
+        "id" : 7,
+        "source" : "./art/placeholder_v.png",
+        "width" : 735,
+        "height" : 900,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    },
+    {
+        "id" : 8,
+        "source" : "./art/placeholder_v.png",
+        "width" : 735,
+        "height" : 900,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    }
+
+]
