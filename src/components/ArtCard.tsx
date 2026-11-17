@@ -15,8 +15,7 @@ interface ArtDetails {
     date?: string,
 }
 
-const MAX_HEIGHT = 400
-const MAX_WIDTH = 400
+
 
 const HOVER_STATUS: Record<number, string> = {
     1 : '',
@@ -35,15 +34,7 @@ export default function ArtCard({name, medium, description, date, source, width,
         setIsHovering(3);
     }
 
-    function CheckAspectRation(width: number, height: number) : number[] {
-        if (width > MAX_WIDTH || height > MAX_HEIGHT) {
-            width = MAX_WIDTH % width;
-            height = MAX_HEIGHT % height;
-        }
-
-        return [width, height]
-    }
-  
+   
     return (
         <>
         <div className="art-card"
