@@ -1,11 +1,21 @@
-import CategoryNavElement from "./CategoryNavElement"
+import { useState } from 'react';
+import './categorynavbar.css'
 
 interface Categories {
     categories: string[]
 }
 
 
+
+
 export default function CategoryNavBar({categories} : Categories) {
+
+    var navElemWidth = 100 / categories.length
+
+    const elementStyle = {
+        width : `${navElemWidth}%`
+    }
+    console.log(navElemWidth)
     return (
         <>
         <div className="category-bar">
@@ -13,9 +23,11 @@ export default function CategoryNavBar({categories} : Categories) {
                 categories.map((category) => {
                     
                     return (
-                        <>
-                            <CategoryNavElement category={category}/>
-                        </>
+                        <div className="nav-element" style={elementStyle}>
+                            <button>
+                                {category}
+                            </button>
+                        </div>
                     )
                 })
             }

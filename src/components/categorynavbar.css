@@ -1,3 +1,11 @@
 .category-bar {
     width: 90%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-element {
+    display: flex;
+    justify-content: center;
 }
