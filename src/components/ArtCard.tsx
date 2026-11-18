@@ -5,6 +5,7 @@ interface ArtDetails {
     // Metadata
     id: number,
     source: string,
+    category: string,
     width?: number,
     height?: number
 
@@ -23,7 +24,7 @@ const HOVER_STATUS: Record<number, string> = {
     3 : 'card-hover-exit'
 } 
 
-export default function ArtCard({name, medium, description, date, source, width, height} : ArtDetails) {
+export default function ArtCard({name, medium, description, date, source, width, height, category} : ArtDetails) {
     const [isHovering, setIsHovering] = useState<number>(1)
 
     const handleHoverEnter = () => {
@@ -37,7 +38,7 @@ export default function ArtCard({name, medium, description, date, source, width,
    
     return (
         <>
-        <div className="art-card"
+        <div className="art-card" data-category={category}
             onMouseEnter={handleHoverEnter}
             onMouseLeave={handleHoverLeave}>
             <img src={source} alt={name} width={width} height={height}/>

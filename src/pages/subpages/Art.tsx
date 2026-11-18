@@ -5,6 +5,7 @@ import './art.css'
 interface ArtData {
     // Metadata
     id: number,
+    category: string
     source: string,
     width: number,
     height: number
@@ -79,7 +80,8 @@ function Art() {
                         <ArtCard key={art.id} id={art.id} source={art.source} 
                         width={newRatio['width']} height={newRatio['height']}
                         name={art.name} description={art.description}
-                        medium={art.medium} date={art.date}/>
+                        medium={art.medium} date={art.date}
+                        category={art.category}/>
                     </div>)
                 })
             }
