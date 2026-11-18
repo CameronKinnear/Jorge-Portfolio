@@ -9,6 +9,27 @@
         "medium" : "Oil on canvas",
         "description" : "This is a basic description of the artwork",
         "date" : "12/12/12"
+    },
+    {
+        "id" : 2,
+        "source" : "./art/placeholder_h.png",
+        "category" : "split",
+        "width" : 300,
+        "height" : 225,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
+    },{
+        "id" : 3,
+        "source" : "./art/placeholder_h.png",
+        "category" : "misc",
+        "width" : 300,
+        "height" : 225,
+        "name" : "Placeholder",
+        "medium" : "Oil on canvas",
+        "description" : "This is a basic description of the artwork",
+        "date" : "12/12/12"
     }
 
 ]

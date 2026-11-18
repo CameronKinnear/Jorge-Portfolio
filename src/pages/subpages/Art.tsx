@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import ArtCard from "../../components/ArtCard"
 import './art.css'
+import CategoryNavBar from "../../components/CategoryNavBar"
 
-interface ArtData {
+export interface ArtData {
     // Metadata
     id: number,
     category: string
@@ -66,10 +67,25 @@ function Art() {
 
         return {'width' : width, 'height' : height}
     }
+
+    function GetAllCategories(): string[] {
+        var finalArray: string[] = []
+
+        artData.map((data) => {
+            var temp = data.category
+
+            if (!finalArray.includes(temp)) {
+                finalArray.push(data.category)
+            }
+        })
+        console.log(finalArray)
+        return finalArray
+    }
   
 
     return (
         <>
+        <CategoryNavBar categories={GetAllCategories()}/>
         <div className="art-display">
             <>
             {
